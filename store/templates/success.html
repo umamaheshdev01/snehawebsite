@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card text-center px-4 py-5"> <!-- Added padding -->
+        <div class="card-body">
+            <h1 class="display-4 text-success" style="font-size: 64px;">✔️</h1> <!-- Increased font size -->
+            <h2 class="card-title mb-4">Order Successful</h2> <!-- Added margin bottom -->
+            <a href="{% url 'home' %}" class="btn btn-success mt-3">Return home</a> <!-- Changed button text and color -->
+        </div>
+    </div>
+</div>
+{% endblock %}
